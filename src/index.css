@@ -1,0 +1,167 @@
+/* General Page Styling */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+/* Container */
+div {
+  max-width: 600px;
+  width: 90%;
+  margin-top: 50px;
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Heading */
+.heading {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input field */
+.taskEnter {
+  width: 70%;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.taskEnter:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 8px rgba(108, 99, 255, 0.3);
+}
+
+/* Add Task Button */
+.taskAdd {
+  margin-left: 10px;
+  padding: 12px 18px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  background: #6c63ff;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.taskAdd:hover {
+  background: #554fd8;
+}
+
+/* Task List Container */
+.TaskList {
+  margin-top: 25px;
+  overflow: auto;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Task Item */
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f7f7f7;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.task:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Buttons inside tasks */
+.task button {
+  margin-left: 8px;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.task button:first-of-type {
+  background: #ff6b6b;
+  color: white;
+}
+
+.task button:first-of-type:hover {
+  background: #e94c4c;
+}
+
+.task button:last-of-type {
+  background: #4caf50;
+  color: white;
+}
+
+.task button:last-of-type:hover {
+  background: #3d8e41;
+}
+
+/* Completed Task */
+.task[style] {
+  opacity: 0.7;
+  background: #f0f0f0;
+}
+
+/* No Task Text */
+.noTask {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 20px;
+}
+.clearAll button
+{
+  
+  margin-left: 8px;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background:#f0b223 ;
+  color: white;
+  transition: all 0.5s;
+  
+}
+.clearAll button:hover
+{
+ background-color: #f0d031 ;
+
+}
+.clearAll
+{
+  margin: 20px;
+  padding: 0px;
+  border: none;
+  box-shadow: none;
+  display: flex;
+  justify-content: center;
+ 
+}
